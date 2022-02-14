@@ -1,0 +1,183 @@
+body { 
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+span {
+	padding-left: 15px;
+}
+
+.our-expertise h3 {
+	font-size: 1.5em;
+
+	/* &.faq {
+	margin: 1em 0;
+	text-align: left; 
+
+		@include media(max-width $small-screen) {
+		margin-left: 20px;
+    	}
+	} */
+}
+
+.faq-container {
+	max-width: 1280px;
+    padding-bottom: 1.5em;
+    margin: 0 auto;
+    width: 90%;
+}
+
+ .mobile-expertise-faq {
+   background-color: #6E6E6E;
+
+ }
+
+p.mobile-faq-menu {
+  margin: auto; 
+  padding: 20px;
+
+}
+
+.expertise-faq {
+	display: inline-block;
+}
+
+.contact-faq {
+	 background: #f3f3f3;
+    height: 1000px;
+    width: 375px;
+    float: right;
+    display: inline-block;
+
+		/* @include media(max-width $large-screen) {
+		float: none;
+		display: block;
+	} */
+}
+
+.mobile-faq {
+  
+}
+
+
+
+/* 
+// .container {
+//   max-width:960px;
+//   margin:0 auto;
+//   padding:1em 0 1em 0;
+// } */
+
+/* Style the element that is used to open and close the accordion class */
+
+
+p.faq-accordion {
+ background-color: #fff;
+ color: #444;
+ cursor: pointer;
+ padding: 18px 18px 0px;
+ width: 100%;
+ text-align: left;
+ outline: none;
+ transition: 0.4s;
+ margin-bottom: 0px;
+ border-top: solid #f4f4f4 1px;
+ font-weight: 700;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.faq-accordion.active, p.accordion:hover {
+ background-color: #fff;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.faq-accordion:after {
+  height: 10px;
+  content: url("data:image/svg+xml,%0A%3Csvg width='8px' height='14px' viewBox='0 0 8 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(0.499106, 0.499106)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ color: #777;
+ float: right;
+ margin-left: 5px;
+}
+
+p.mobile-faq-menu:after {
+  height: 10px;
+  content: url("data:image/svg+xml,%0A%3Csvg width='8px' height='14px' viewBox='0 0 8 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(0.499106, 0.499106)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ color: #777;
+ float: right;
+ margin-left: 5px;
+}
+
+
+/* Unicode character for "minus" sign (-) */
+p.faq-accordion.active:after {
+  height: 10px;
+  content:url("data:image/svg+xml,%0A%3Csvg width='14px' height='8px' viewBox='0 0 14 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(7.000000, 3.999869) rotate(90.000000) translate(-7.000000, -3.999869) translate(3.499106, -2.500894)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+p.mobile-faq-menu.active:after {
+  height: 10px;
+  content: url("data:image/svg+xml,%0A%3Csvg width='14px' height='8px' viewBox='0 0 14 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(7.000000, 3.999869) rotate(90.000000) translate(-7.000000, -3.999869) translate(3.499106, -2.500894)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Style the element that is used for the panel class */
+div.faq-panel {
+ // padding: 5px 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ /* transition: 0.1s ease-in-out; */
+ opacity: 0;
+ text-align: left;
+ padding-left: 18px;
+ max-width: 580px;
+ // margin: 5px 0px;
+}
+
+div.faq-panel.show {
+ opacity: 1;
+ max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+div.mobile-faq-panel {
+   // padding: 5px 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ /* transition: 0.6s ease-in-out; */
+ opacity: 0;
+ text-align: left;
+ padding-left: 18px;
+ // max-width: 580px;
+ // margin: 5px 0px;
+} 
+
+div.mobile-faq-panel.show {
+   opacity: 1;
+ max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.mobile-faq-menu {
+  color: #fff;
+}
+p {
+  color: #000;
+}
+
+.custom-col {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  width: 100%;
+
+}
+
+.mobile-expertise-faq ol li article {
+  display: flex;
+  flex-direction: row;
+}
+.mobile-expertise-faq ol li article > div {
+  display: flex;
+  flex: 1;
+}
