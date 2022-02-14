@@ -154,7 +154,7 @@ div.mobile-faq-panel {
 
 div.mobile-faq-panel.show {
    opacity: 1;
- max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+ max-height: 100%; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
 .mobile-faq-menu {
@@ -173,11 +173,54 @@ p {
 
 }
 
-.mobile-expertise-faq ol li article {
-  display: flex;
-  flex-direction: row;
+.mobile-expertise-faq ol > li {
+  padding: 30px 0;
 }
+
+.mobile-expertise-faq ol > li:not(:last-child) {
+border-bottom: 1px solid #A9A9A9;
+}
+
+
+
 .mobile-expertise-faq ol li article > div {
   display: flex;
   flex: 1;
+}
+
+
+.mobile-expertise-faq iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+.mobile-expertise-faq .col-md-6 iframe:nth-child(2) {
+margin-top: 30px;
+}
+
+.mobile-faq-panel .row {
+padding: 30px;
+}
+
+.mobile-expertise-faq ol  {
+
+  counter-reset: ordered;
+  padding: 30px
+
+}
+.mobile-expertise-faq ol >  li::before {
+
+  color: #838383;
+  content: counter(ordered);
+  counter-increment: ordered;
+  display: inline-block;
+  font-weight: 100;
+  margin-left: -70px;
+  margin-top: -19px;
+  padding: 5px;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+
 }
