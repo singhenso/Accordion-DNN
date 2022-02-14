@@ -1,78 +1,55 @@
-body { 
-  font-family: brandon-grotesque, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
 
-span {
-	padding-left: 15px;
-}
 
-.our-expertise h3 {
+
+.new-faq .our-expertise h3 {
 	font-size: 1.5em;
 
-	/* &.faq {
-	margin: 1em 0;
-	text-align: left; 
-
-		@include media(max-width $small-screen) {
-		margin-left: 20px;
-    	}
-	} */
 }
 
-.faq-container {
+.new-faq .faq-container {
 	max-width: 1280px;
     padding-bottom: 1.5em;
     margin: 0 auto;
     width: 90%;
 }
 
- .mobile-expertise-faq {
+ /* .new-faq .mobile-expertise-faq {
    background-color: #6E6E6E;
 
- }
+ } */
 
-p.mobile-faq-menu {
+.new-faq .mobile-expertise-faq .headd {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.new-faq p.mobile-faq-menu {
   margin: auto; 
   padding: 20px;
 
 }
 
-.expertise-faq {
+.new-faq .expertise-faq {
 	display: inline-block;
 }
 
-.contact-faq {
+.new-faq .contact-faq {
 	 background: #f3f3f3;
     height: 1000px;
     width: 375px;
     float: right;
     display: inline-block;
 
-		/* @include media(max-width $large-screen) {
-		float: none;
-		display: block;
-	} */
 }
 
-.mobile-faq {
+.new-faq .mobile-faq {
   
 }
 
 
 
-/* 
-// .container {
-//   max-width:960px;
-//   margin:0 auto;
-//   padding:1em 0 1em 0;
-// } */
 
-/* Style the element that is used to open and close the accordion class */
-
-
-p.faq-accordion {
+.new-faq p.faq-accordion {
  background-color: #fff;
  color: #444;
  cursor: pointer;
@@ -86,13 +63,11 @@ p.faq-accordion {
  font-weight: 700;
 }
 
-/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-p.faq-accordion.active, p.accordion:hover {
+.new-faq p.faq-accordion.active, p.accordion:hover {
  background-color: #fff;
 }
 
-/* Unicode character for "plus" sign (+) */
-p.faq-accordion:after {
+.new-faq p.faq-accordion:after {
   height: 10px;
   content: url("data:image/svg+xml,%0A%3Csvg width='8px' height='14px' viewBox='0 0 8 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(0.499106, 0.499106)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
  color: #777;
@@ -100,7 +75,7 @@ p.faq-accordion:after {
  margin-left: 5px;
 }
 
-p.mobile-faq-menu:after {
+.new-faq p.mobile-faq-menu:after {
   height: 10px;
   content: url("data:image/svg+xml,%0A%3Csvg width='8px' height='14px' viewBox='0 0 8 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(0.499106, 0.499106)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
  color: #777;
@@ -109,20 +84,17 @@ p.mobile-faq-menu:after {
 }
 
 
-/* Unicode character for "minus" sign (-) */
-p.faq-accordion.active:after {
+.new-faq p.faq-accordion.active:after {
   height: 10px;
   content:url("data:image/svg+xml,%0A%3Csvg width='14px' height='8px' viewBox='0 0 14 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(7.000000, 3.999869) rotate(90.000000) translate(-7.000000, -3.999869) translate(3.499106, -2.500894)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-p.mobile-faq-menu.active:after {
+.new-faq p.mobile-faq-menu.active:after {
   height: 10px;
   content: url("data:image/svg+xml,%0A%3Csvg width='14px' height='8px' viewBox='0 0 14 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(7.000000, 3.999869) rotate(90.000000) translate(-7.000000, -3.999869) translate(3.499106, -2.500894)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M0.146893784,0.146893784 C0.240698047,0.052852083 0.368066523,4.4408921e-16 0.500893784,4.4408921e-16 C0.633721045,4.4408921e-16 0.761089521,0.052852083 0.854893784,0.146893784 L6.85489378,6.14689378 C6.94893548,6.24069805 7.00178757,6.36806652 7.00178757,6.50089378 C7.00178757,6.63372104 6.94893548,6.76108952 6.85489378,6.85489378 L0.854893784,12.8548938 C0.659384982,13.0504026 0.342402585,13.0504026 0.146893784,12.8548938 C-0.0486150178,12.659385 -0.0486150178,12.3424026 0.146893784,12.1468938 L5.79389378,6.50089378 L0.146893784,0.854893784 C0.052852083,0.761089521 0,0.633721045 0,0.500893784 C0,0.368066523 0.052852083,0.240698047 0.146893784,0.146893784 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Style the element that is used for the panel class */
-div.faq-panel {
- // padding: 5px 18px;
+.new-faq div.faq-panel {
  background-color: white;
  max-height: 0;
  overflow: hidden;
@@ -131,40 +103,35 @@ div.faq-panel {
  text-align: left;
  padding-left: 18px;
  max-width: 580px;
- // margin: 5px 0px;
 }
 
-div.faq-panel.show {
+.new-faq div.faq-panel.show {
  opacity: 1;
  max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
-div.mobile-faq-panel {
-   // padding: 5px 18px;
+.new-faq div.mobile-faq-panel {
  background-color: white;
  max-height: 0;
  overflow: hidden;
- /* transition: 0.6s ease-in-out; */
  opacity: 0;
  text-align: left;
  padding-left: 18px;
- // max-width: 580px;
- // margin: 5px 0px;
 } 
 
-div.mobile-faq-panel.show {
+.new-faq div.mobile-faq-panel.show {
    opacity: 1;
  max-height: 100%; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
-.mobile-faq-menu {
+.new-faq .mobile-faq-menu {
   color: #fff;
 }
-p {
+.new-faq p {
   color: #000;
 }
 
-.custom-col {
+.new-faq .custom-col {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -173,42 +140,53 @@ p {
 
 }
 
-.mobile-expertise-faq ol > li {
+.new-faq .mobile-expertise-faq ol > li {
   padding: 30px 0;
 }
 
-.mobile-expertise-faq ol > li:not(:last-child) {
+.new-faq .mobile-expertise-faq ol > li:not(:last-child) {
 border-bottom: 1px solid #A9A9A9;
 }
 
 
 
-.mobile-expertise-faq ol li article > div {
+.new-faq .mobile-expertise-faq ol li article > div {
   display: flex;
   flex: 1;
 }
 
 
-.mobile-expertise-faq iframe {
+.new-faq .mobile-expertise-faq iframe {
   border: 0;
   margin: 0 auto;
   display: block;
+  width: 100%;
 }
-.mobile-expertise-faq .col-md-6 iframe:nth-child(2) {
+.new-faq .mobile-expertise-faq .col-md-6 iframe:nth-child(2) {
 margin-top: 30px;
 }
 
-.mobile-faq-panel .row {
+.new-faq .mobile-faq-panel .row {
 padding: 30px;
 }
+.new-faq .mobile-faq-panel .row::marker {
+  display: none;
+  color: #fff;
+  }
+  
 
-.mobile-expertise-faq ol  {
+.new-faq .mobile-expertise-faq ol  {
 
   counter-reset: ordered;
-  padding: 30px
+  padding: 0;
+  margin: 0;
 
 }
-.mobile-expertise-faq ol >  li::before {
+.new-faq h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+.new-faq .mobile-expertise-faq ol >  li::before {
 
   color: #838383;
   content: counter(ordered);
@@ -223,4 +201,62 @@ padding: 30px;
   text-align: center;
   font-size: 50px;
 
+}
+
+
+/* sidebar */
+.sideb-container {
+  width: 400px;
+}
+
+.sideb {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+}
+.sideb p {
+  margin: 0;
+}
+.sideb h3 {
+  margin-bottom: 15px;
+}
+.sideb a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.sideb > p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.sideb ul {
+  margin: 0;
+}
+.sideb ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sideb ul li:not(:last-child) {
+margin-bottom: 15px;
+}
+.sideb ul li svg {
+  margin-right: 15px;
+}
+
+.acc-wrap {
+  margin-bottom: 10px;
+  background-color: #6E6E6E;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+.col-sm-3.col-lg-2.sub-section-header {
+  width: 25%;
 }
