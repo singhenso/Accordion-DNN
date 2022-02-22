@@ -41,3 +41,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+
+const navbar = document.getElementById('stickynav')
+
+// OnScroll event handler
+const onScroll = () => {
+
+  // Get scroll value
+  const scroll = document.documentElement.scrollTop
+
+  // If scroll value is more than 0 - add class
+  if (scroll > 600) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled")
+  }
+}
+
+// Use the function
+window.addEventListener('scroll', onScroll)
